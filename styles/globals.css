@@ -20,3 +20,21 @@ a {
   box-sizing: border-box;
 }
 
+.banner_shine {
+  /* transition: 20s infinite; */
+  animation: infinite;
+  animation-name: banner_shine;
+  animation-duration: 4s;
+}
+
+@keyframes banner_shine {
+  2%, 10%, 22%, 25% {
+    opacity: 1;
+  }
+  6% {
+    opacity: 0.3;
+  }
+  0%, 4%, 7%, 23% {
+    opacity: 0;
+  }
+}
