@@ -39,7 +39,7 @@ const Events = () => {
                 {(eventList.length > 0)
                 ? eventList.map(event => {
                     return (
-                        <Event event={event} />
+                        <Event event={event} key={event.title}/>
                     )
                 })
                 : <li className="text-xl">No upcoming events. Check back soon!</li>
